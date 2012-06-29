@@ -14,6 +14,7 @@ It has the following commands:
  * copy                 copy a dump file
  * cvs2svnfix           fix a cvs2svn created dump file
  * diff                 show differences between two dump files
+ * drop-padding-revs    drop empty paddings revisions
  * edit                 edit files in a dump file
  * eolfix               fix EOL of text files in a dump
  * export               export files from a dump file

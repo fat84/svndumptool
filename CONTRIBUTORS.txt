@@ -55,4 +55,7 @@ Matthias Troffaes
 
 Serge Levin
  - Bugfix: Missing UUID caused traceback.
+ 
+Aurélien Mino
+ - Added drop padding revisions command
 

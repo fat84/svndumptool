@@ -33,6 +33,7 @@ from svndump.props import svndump_transform_revprop_cmdline, \
                           svndump_transform_prop_cmdline, \
                           svndump_apply_autoprops_cmdline
 from svndump.sanitize import svndump_sanitize_cmdline
+from svndump.drop_padding_revs import svndump_drop_padding_revs_cmdline
 from svndump.tools import svndump_copy_cmdline, svndump_export_cmdline, \
                           svndump_check_cmdline, svndump_log_cmdline, \
                           svndump_ls_cmdline, \
@@ -44,6 +45,7 @@ __commands = {
     "copy":                 svndump_copy_cmdline,
     "cvs2svnfix":           svndump_cvs2svnfix_cmdline,
     "diff":                 svndump_diff_cmdline,
+    "drop-padding-revs":    svndump_drop_padding_revs_cmdline,
     "edit":                 svndump_edit_cmdline,
     "eolfix":               svndump_eol_fix_cmdline,
     "export":               svndump_export_cmdline,
@@ -71,6 +73,7 @@ def __help( appname, args ):
         print "    copy                 copy a dump file"
         print "    cvs2svnfix           fix a cvs2svn created dump file"
         print "    diff                 show differences between two dump files"
+        print "    drop-padding-revs    drop empty padding revisions"
         print "    edit                 edit files in a dump file"
         print "    eolfix               fix EOL of text files in a dump"
         print "    export               export files from a dump file"
